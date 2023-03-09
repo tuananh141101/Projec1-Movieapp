@@ -70,6 +70,9 @@ body::-webkit-scrollbar-thumb {
 .header-main .menu-main li {
   margin: 0 10px;
 }
+.header-main .wrap-btn {
+  display: none;
+}
 
 header {
   padding: 1rem;
@@ -162,7 +165,7 @@ main .movie .overview {
   bottom: 0;
   right: 0;
   padding: 2rem;
-  height: 100%;
+  height: 50%;
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
   overflow-y: auto;

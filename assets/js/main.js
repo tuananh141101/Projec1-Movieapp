@@ -8,14 +8,16 @@ async function getMoviesAPI(API_URL) {
 };
 getMoviesAPI(API_URL)
 
-// Hien thi du lieu ra ngoai fe
+// Hien thi du lieu ra ngoai fe 
 function showMovie(data) {
     let html = ``;
     const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
     data.map((item) => {
         html += `
         <div class="movie">
+        <a href ="../detail.html?id=${item.id}">
             <img src="${IMG_PATH + item.poster_path}" alt="">
+        </a>
             <div class="movie-info">
                 <h3>${item.title}</h3>
                 <span class="rating ${changeColorRating(item.vote_average)}">${item.vote_average}</span>
