@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: gray;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(34, 37, 75);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(34, 37, 75)), color-stop(98%, rgb(55, 59, 105)));
+  background: linear-gradient(180deg, rgb(34, 37, 75) 0%, rgb(55, 59, 105) 98%);
+}
+
+.header-main {
+  background-color: #1d2b3c;
+}
+.header-main .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+.header-main .logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 60%;
+}
+.header-main .menu-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  margin: unset;
+}
+.header-main .menu-main li {
+  margin: 0 10px;
+}
+
+header {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #373b69;
+}
+header form .search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #7378c5;
+}
+header form .search:focus {
+  outline: none;
+  background-color: #22254b;
+}
+
+main {
+  background-color: #22254b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+main .movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: #373b69;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+}
+main .movie img {
+  width: 100%;
+}
+main .movie .movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.2rem;
+  letter-spacing: 0.5px;
+  padding: 0.8rem 1rem 1.2rem;
+  color: #eee;
+}
+main .movie .movie-info h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .movie .movie-info span {
+  color: gray;
+  font-weight: 700;
+  background-color: #22254b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+main .movie .movie-info .Great {
+  color: yellow;
+}
+main .movie .movie-info .Normal {
+  color: green;
+}
+main .movie .movie-info .Boring {
+  color: red;
+}
+main .movie .overview {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+  height: 100%;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  overflow-y: auto;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+main .movie:hover .overview {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 0.9;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.pagination {
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #22254b;
+}
+.pagination .btn-pagi {
+  border-radius: 5px;
+  border: 1px solid #22254b;
+  background-color: #373b69;
+  padding: 0.5rem 1.3rem;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+}
+.pagination .btn-pagi:hover {
+  border: 1px solid #373b69;
+  background-color: #22254b;
+}
+.pagination .btn-pagi:disabled {
+  background-color: #22254b;
+}
+.pagination p {
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btnScrollDown {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  background-color: #373b69;
+  color: #fff;
+}
+.btnScrollDown:active {
+  background-color: red;
+}
+.btnScrollDown:hover {
+  border: 1px solid #373b69;
+  background-color: #22254b;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-main li {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 996px) {
+  .header-main .menu-main {
+    display: none;
+  }
+  .header-main .wrap-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+  }
+  .header-main .wrap-btn .btn-mobile-open {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  .menu-mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 0%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .menu-mobile .menu {
+    color: #818181;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .menu-mobile .menu li {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+  }
+  .menu-mobile .close {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 1;
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+}

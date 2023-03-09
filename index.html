@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Movie App</title>
+    <link rel="stylesheet" href="./assets/dist/css/main.css">
+    <link rel="stylesheet" href="./lib/bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./lib/fontawesome-free-6.3.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="./lib/fontawesome-free-6.3.0-web/css/solid.min.css">
+    <link rel="stylesheet" href="./lib/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-8">
+                    <!-- Menu-desktop -->
+                    <ul class="menu-main">
+                        <li><a href="#">Trang Chu</a></li>
+                        <li><a href="#">The Loai</a></li>
+                        <li><a href="#">Phim Le</a></li>
+                        <li><a href="#">Phim Dang Chieu</a></li>
+                        <li><a href="#">Lich Chieu</a></li>
+                        <li><a href="#">Phim Hoan Thanh</a></li>
+                    </ul>
+
+                    <!-- Close-btn -->
+                    <div class="wrap-btn">
+                        <button class="btn-mobile-open">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <form id="form">
+            <input type="text" id="search" class="search" placeholder="Search">
+        </form>
+    </header>
+
+    <main id="main">
+        
+    </main>
+
+    <div class="pagination">
+        <a href="#">
+            <button id="back-page" class="btn-pagi">
+                Back Pages
+            </button>
+        </a>
+        <p class="number-pages">1</p>
+        <a href="#">
+            <button id="next-page" class="btn-pagi">
+                Next Pages
+            </button>
+        </a>
+    </div>
+
+    <button class="btnScrollDown">Down</button>
+
+    <!-- Menu-mobile -->
+    <div class="menu-mobile" id="menu-mobile">
+        
+        <button class="close">
+            <a href="#">X</a>
+        </button>
+
+        <ul class="menu">
+            <li><a href="#">Trang Chu</a></li>
+            <li><a href="#">The Loai</a></li>
+            <li><a href="#">Phim Le</a></li>
+            <li><a href="#">Phim Dang Chieu</a></li>
+            <li><a href="#">Lich Chieu</a></li>
+            <li><a href="#">Phim Hoan Thanh</a></li>
+        </ul>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
