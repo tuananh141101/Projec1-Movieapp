@@ -6,7 +6,7 @@ async function getMoviesAPI(API_URL) {
     const data = await response.data.results;
     showMovie(data); //Loi goi the thuc thi showmovie
 };
-getMoviesAPI(API_URL)
+getMoviesAPI(API_URL)   
 
 // Hien thi du lieu ra ngoai fe 
 function showMovie(data) {
